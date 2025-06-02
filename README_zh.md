@@ -59,18 +59,11 @@ npm run dev
 
 ## ⚙️ 配置
 
-1. Basic Setup
-   - Edit `config/site.ts` for website information
-   - Update icons and logo in `public/`
-   - Configure `app/sitemap.ts` for sitemap
-   - Update `app/robots.ts` for robots.txt
 
-2. i18n 配置
-   - Add/modify language files in `i18n/messages/`
-   - Configure supported languages in `i18n/routing.ts`
-   - Set up i18n routing in `middleware.ts`
-   - Create pages under `app/[locale]/`
-   - Use the `Link` component from `i18n/routing.ts` instead of Next.js default
+1. i18n 配置
+   - 在 `i18n/lang/` 下新增或者修改语言文件
+   - 在 `i18n/config.ts` 中配置新增/修改的语言文件
+   - 在 `i18n、index.ts` 中加载`i18n/lang/` 文件实现国际化
 
 
 ## 🔍 SEO 支持
@@ -83,12 +76,77 @@ npm run dev
    - 支持Open Graph
    - 多语言SEO支持
 
+## 🌐 选择收款方式
+
+进入 `.env` 文件完成以下内容：
+```
+PAYMENT_METHOD=   # 选择你想要的收款方式：1、stripe;2、paddle(暂未支持);3、creem
+```
+
+## 💰 Stripe全球化支付支持
+
+进入 `.env` 文件完成以下内容：
+```
+NUXT_STRIPE_SECRET_KEY= # 你的stripe密钥. 详情见 :https://stripe.com
+NUXT_PUBLIC_STRIPE_PUBLISHABLE_KEY= #你的stripe公钥
+NUXT_STRIPE_WEBHOOK_SECRET= # 你的stripe webhook 密钥
+```
+
+## 💳 独立开发者提供稳定的的在线支付服务支持
+
+进入 `.env` 文件完成以下内容：
+```
+NUXT_CREEM_API_KEY= # 你的creem申请的API密钥. 详情见:https://www.creem.io
+NUXT_PUBLIC_CREEM_URL= # 你的creem基础url 示例: https://test-api.creem.io
+NUXT_CREEM_WEBHOOK_SECRET= # 你的creem的webhook密钥
+```
+
+## ✉️ 邮件API服务支持
+
+进入 `.env` 文件完成以下内容：
+```
+NUXT_RESEND_API_KEY= # 你的resend申请的api密钥. 详情见 :https://resend.com
+```
+
+## 🔍 mysql连接支持
+
+进入 `.env` 文件完成以下内容：
+```
+DATABASE_URL= # 你的mysql连接地址. 示例：mysql://root:password.@localhost:3306/nuxtpro
+```
+
 ## 📊 数据可视化分析
 
 进入 `.env` 文件完成以下内容：
 ```
 NUXT_PUBLIC_PLAUSIBLE_DOMAIN= # 你的plausible域名 举例: nuxtpro.com  details for :https://nuxt.com/modules/plausible
 NUXT_PUBLIC_PLAUSIBLE_API_HOST= # 你的plausible请求地址
+```
+
+## 🌙 ip地址信息获取支持
+
+进入 `.env` 文件完成以下内容：
+```
+IPINFO_TOKEN= # 你的ipinfo申请的token .详情见: https://ipinfo.io
+```
+
+## 🔒 BetterAuth认证授权支持
+
+进入 `.env` 文件完成以下内容：
+```
+BETTER_AUTH_SECRET= # 你的 better auth 32位随机密钥. 详情见 : https://www.better-auth.com/docs/installation
+BETTER_AUTH_URL= # 你的 better auth 访问Url  示例: http://localhost:3000 
+GOOGLE_CLIENT_ID= # 你的 google clinet id 示例: xxxxxxxxxxxx.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET= # 你的 google client 密钥. 详情见 :https://www.better-auth.com/docs/authentication/google   https://console.cloud.google.com/apis/dashboard
+GITHUB_CLIENT_ID= # 你的 github client id. 详情见 : https://www.better-auth.com/docs/authentication/github   https://github.com/settings/developers
+GITHUB_CLIENT_SECRET= # 你的 github client 密钥 
+```
+
+## 🌙 谷歌搜索控制台支持
+
+进入 `.env` 文件完成以下内容：
+```
+GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE= # 你的 google搜索控制台验证码. 详情见: https://search.google.com/search-console/about
 ```
 
 ## 一键部署

@@ -58,18 +58,10 @@ Visit http://localhost:3000 to view your nuxtpro application.
 
 ## ⚙️ Configuration
 
-1. Basic Setup
-   - Edit `config/site.ts` for website information
-   - Update icons and logo in `public/`
-   - Configure `app/sitemap.ts` for sitemap
-   - Update `app/robots.ts` for robots.txt
-
-2. i18n 配置
-   - Add/modify language files in `i18n/messages/`
-   - Configure supported languages in `i18n/routing.ts`
-   - Set up i18n routing in `middleware.ts`
-   - Create pages under `app/[locale]/`
-   - Use the `Link` component from `i18n/routing.ts` instead of Next.js default
+1. i18n config
+   - Add or modify language files in `i18n/lang/`
+   - Configure added/modified language files in `i18n/config.ts`
+   - Load `i18n/lang/` files in `i18n/index.ts` to implement internationalization
 
 
 ## 🔍 SEO Optimization
@@ -82,12 +74,77 @@ Built-in comprehensive SEO features:
    - Open Graph support
    - Multilingual SEO support
 
-## 📊 Data Analytics
+## 🌐 select payment method
 
-Enter `.env` file to complate ：
+Configure the following in your `.env` file:
+```
+PAYMENT_METHOD=   # select your payment：1、stripe;2、paddle(not support);3、creem
+```
+
+## 💰 Stripe Global Payment Support
+
+Configure the following in your `.env` file:
+```
+NUXT_STRIPE_SECRET_KEY= # your stripe secret key. details for :https://stripe.com
+NUXT_PUBLIC_STRIPE_PUBLISHABLE_KEY= # your stripe public key
+NUXT_STRIPE_WEBHOOK_SECRET= # your stripe webhook secret key
+```
+
+## 💳 Stable Online Payment Service Support for Independent Developers
+
+Configure the following in your `.env` file:
+```
+NUXT_CREEM_API_KEY= # your creem api key. details for :https://www.creem.io
+NUXT_PUBLIC_CREEM_URL= # your creem base url e.g: https://test-api.creem.io
+NUXT_CREEM_WEBHOOK_SECRET= # your creem webhook secret
+```
+
+## ✉️ Email API Service Support
+
+Configure the following in your `.env` file:
+```
+NUXT_RESEND_API_KEY= # your resend api key. details for :https://resend.com
+```
+
+## 🔍 MySQL Connection Support
+
+Configure the following in your `.env` file:
+```
+DATABASE_URL= # your mysql url e.g: mysql://root:password.@localhost:3306/nuxtpro
+```
+
+## 📊 Data Visualization Analysis
+
+Configure the following in your `.env` file:
 ```
 NUXT_PUBLIC_PLAUSIBLE_DOMAIN= # your plausible domain e.g: nuxtpro.com  details for :https://nuxt.com/modules/plausible
-NUXT_PUBLIC_PLAUSIBLE_API_HOST=  your plausible request url 
+NUXT_PUBLIC_PLAUSIBLE_API_HOST= # your plausible request url 
+```
+
+## 🌙 IP Address Information Support
+
+Configure the following in your `.env` file:
+```
+IPINFO_TOKEN= # your ipinfo token . details for : https://ipinfo.io/ to register
+```
+
+## 🔒 BetterAuth Authentication and Authorization Support
+
+Configure the following in your `.env` file:
+```
+BETTER_AUTH_SECRET= # your better auth 32 secret. details for : https://www.better-auth.com/docs/installation
+BETTER_AUTH_URL= # your better auth url  e.g: http://localhost:3000 
+GOOGLE_CLIENT_ID= # your google clinet id e.g: xxxxxxxxxxxx.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET= # your google client secret. details for :https://www.better-auth.com/docs/authentication/google   https://console.cloud.google.com/apis/dashboard
+GITHUB_CLIENT_ID= # your github client id. details for : https://www.better-auth.com/docs/authentication/github   https://github.com/settings/developers
+GITHUB_CLIENT_SECRET= # your github client secret 
+```
+
+## 🌙 Google Search Console Support
+
+Configure the following in your `.env` file:
+```
+GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE= # your google search console verification code. details for: https://search.google.com/search-console/about
 ```
 
 ## One-Click Deploy
