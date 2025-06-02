@@ -3,6 +3,8 @@
 
 👉 NuxtPro 商业版 $40 刀 限时早鸟折扣券 -> https://x.com/PennyJoly
 
+详细文档会在稍后补充完整~
+
 ## Setup
 
 Make sure to install dependencies:
