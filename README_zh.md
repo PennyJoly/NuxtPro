@@ -93,7 +93,7 @@ NUXT_PUBLIC_PLAUSIBLE_API_HOST= # 你的plausible请求地址
 
 ## 一键部署
 
-<!-- [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/weijunext/nextjs-15-starter&project-name=&repository-name=nextjs-15-starter&demo-title=Nextjs15Starter&demo-description=Nextjs%2015%20starter.&demo-url=https://nextforge.dev&demo-image=https://nextforge.dev/og.png) -->
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/PennyJoly/NuxtPro)
 
 ## 📄 许可证
 
