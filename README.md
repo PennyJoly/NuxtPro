@@ -2,41 +2,40 @@
 
 🌍 *[English](README.md) ∙ [简体中文](README_zh.md) ∙ [日本語](README_ja.md)*
 
-# NuxtPro:开源的Nuxt SaaS一站式出海模板 | 多语言、支付和友好SEO（Nuxt3）
+# NuxtPro: Open Source Nuxt SaaS All-in-One Template for Global Expansion | Multilingual, Payment, and SEO Friendly (Nuxt3)
 
- NuxtPro是一款基于Nuxt3的开源企业级SaaS模板，预集成全球支付网关（Stripe/Cream）、谷歌OAuth、多语言路由和SEO优化工具。为开发人员提供SSR/SSG支持，开箱即用。
+NuxtPro is an open-source enterprise-level SaaS template based on Nuxt3, pre-integrated with global payment gateways (Stripe/Cream), Google OAuth, multilingual routing, and SEO optimization tools. It provides developers with SSR/SSG support, ready to use out of the box.
 
-- [👉 源码地址](https://github.com/PennyJoly/NuxtPro)
+- [👉 Source Code](https://github.com/PennyJoly/NuxtPro)
 
-🚀 如果你在寻找基于Nuxt框架，且自带后台管理系统，前后端兼容友好的一站式出海Saas模板，不妨看看NuxtPro的商业版?(https://nuxtpro.com). NuxtPro商业版让您1小时快速上线MVP，验证需求，节省大量研发时间。NuxtPro专注于小而美的产品，让您有更多时间花在推广和运营上，搭配上主流的AI产品，一人公司即可高效地创收。
+🚀 If you are looking for a Nuxt framework-based, all-in-one SaaS template with a built-in admin system and front-end/back-end compatibility, consider the commercial version of NuxtPro? (https://nuxtpro.com). The commercial version of NuxtPro allows you to launch an MVP in just 1 hour, validate your needs, and save a lot of development time. NuxtPro focuses on small and beautiful products, giving you more time to spend on promotion and operations. With mainstream AI products, a one-person company can efficiently generate revenue.
 
-👉 NuxtPro 商业版 $40 刀 限时早鸟折扣券 -> https://x.com/PennyJoly
+👉 NuxtPro Commercial Version $40 Limited Time Early Bird Discount Coupon -> https://x.com/PennyJoly
 
-## ✨ 产品特点
-高度集成当下最流行的开源技术栈方案，让您的出海创收历程仅需片刻
+## ✨ Product Features
+Highly integrated with the most popular open-source technology stack solutions, making your journey to global revenue generation just a moment away.
 
-- 🌐 NuxtJs3 -> 开源的全栈的适用于生产环境的 NuxtJs 框架.
-- 🌈 Vue 3 -> 用于 Web 和原生用户界面的开源代码库.
-- 🔒 BetterAuth -> 简单高效的开源认证授权框架.
-- ✅ Shadcn UI -> 用于构建现代风格界面的开源UI组件.
-- 🎨 Tailwindcss -> 用于快速 UI 开发的开源 CSS 框架.
-- 🔍 DrizzleOrm -> 用于 Node.js 和 TypeScript 的开源下一代数据库工具包.
-- 💰 Stripe -> 最好、最安全的在线支付服务.
-- 💳 Creem -> 为 SaaS 和独立开发者提供稳定的的在线支付服务.
-- ✉️ Resend -> 为开发者们打造的现代邮件API服务.
-- 👄 i18n -> 开源且轻松地为Nuxt项目添加国际化支持,再小的语种都不怕.
-- 💨 plausible -> 开源且隐私友好的Google Analytics 替代品.
-- 🌙 vite-pwa -> 基于vite的开源且零配置的PWA框架.
+- 🌐 NuxtJs3 -> An open-source full-stack NuxtJs framework suitable for production environments.
+- 🌈 Vue 3 -> An open-source library for web and native user interfaces.
+- 🔒 BetterAuth -> A simple and efficient open-source authentication and authorization framework.
+- ✅ Shadcn UI -> Open-source UI components for building modern-style interfaces.
+- 🎨 Tailwindcss -> An open-source CSS framework for rapid UI development.
+- 🔍 DrizzleOrm -> An open-source next-generation database toolkit for Node.js and TypeScript.
+- 💰 Stripe -> The best and most secure online payment service.
+- 💳 Creem -> A stable online payment service for SaaS and independent developers.
+- ✉️ Resend -> A modern email API service built for developers.
+- 👄 i18n -> Open-source and easy internationalization support for Nuxt projects, no matter how small the language.
+- 💨 plausible -> An open-source and privacy-friendly alternative to Google Analytics.
+- 🌙 vite-pwa -> An open-source and zero-configuration PWA framework based on Vite.
 
+## 🚀 How to Quickly Start the Project
 
-## 🚀 如何快速开始项目
-
-1. 克隆仓库地址:
+1. Clone the repository:
 ```bash
 git clone https://github.com/PennyJoly/NuxtPro
 ```
 
-2. 安装依赖:
+2. Install dependencies:
 ```bash
 npm install
 # or
@@ -45,19 +44,19 @@ yarn
 pnpm install
 ```
 
-3. 将“.env.example”克隆，重命名为".env",填入对应内容:
+3. Copy environment variables:
 ```bash
 cp .env.example .env
 ```
 
-4. 启动运行服务:
+4. Start the development server:
 ```bash
 npm run dev
 ```
 
-浏览器里输入 http://localhost:3000 查看启动的NuxtPro应用.
+Visit http://localhost:3000 to view your nuxtpro application.
 
-## ⚙️ 配置
+## ⚙️ Configuration
 
 1. Basic Setup
    - Edit `config/site.ts` for website information
@@ -73,43 +72,43 @@ npm run dev
    - Use the `Link` component from `i18n/routing.ts` instead of Next.js default
 
 
-## 🔍 SEO 支持
+## 🔍 SEO Optimization
 
-内置全面的SEO功能：
-   - 服务器端渲染和静态生成
-   - 自动生成sitemap.xml
-   - robots.txt配置
-   - 元数据优化
-   - 支持Open Graph
-   - 多语言SEO支持
+Built-in comprehensive SEO features:
+   - Server-side rendering and static generation
+   - Automatic sitemap.xml generation
+   - robots.txt configuration
+   - Optimized metadata
+   - Open Graph support
+   - Multilingual SEO support
 
-## 📊 数据可视化分析
+## 📊 Data Analytics
 
-进入 `.env` 文件完成以下内容：
+Enter `.env` file to complate ：
 ```
-NUXT_PUBLIC_PLAUSIBLE_DOMAIN= # 你的plausible域名 举例: nuxtpro.com  details for :https://nuxt.com/modules/plausible
-NUXT_PUBLIC_PLAUSIBLE_API_HOST= # 你的plausible请求地址
+NUXT_PUBLIC_PLAUSIBLE_DOMAIN= # your plausible domain e.g: nuxtpro.com  details for :https://nuxt.com/modules/plausible
+NUXT_PUBLIC_PLAUSIBLE_API_HOST=  your plausible request url 
 ```
 
-## 一键部署
+## One-Click Deploy
 
 <!-- [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/weijunext/nextjs-15-starter&project-name=&repository-name=nextjs-15-starter&demo-title=Nextjs15Starter&demo-description=Nextjs%2015%20starter.&demo-url=https://nextforge.dev&demo-image=https://nextforge.dev/og.png) -->
 
-## 📄 许可证
+## 📄 License
 
 Apache 2.0 License
 
-## 🤝 贡献
+## 🤝 Contributing
 
-欢迎提交问题和拉取请求！
+Issues and Pull Requests are welcome!
 
-## 关于作者
+## About the Author
 
-Hey，这里是Kevin，一个别具一格的ENTJ-H型独立开发者，不受约束的反骨的社恐(社交型恐怖分子)。
-现在很喜欢这样一句话，也一直在贯彻始终："想多了，全是问题;做多了,全是答案"。Just do it~我也会将我的经验与大家一同分享，一同成长进步。
-2025NuxtPro将专注于个人产品出海，提供一站式个人产品出海解决方案，贯彻打造一人公司。
+Hi, I'm Kevin, a unique ENTJ-H type independent developer, an unconstrained rebel and a social butterfly (socially fearless). 
+I really like this saying and have been consistently practicing it: "Overthinking leads to problems; taking action leads to solutions." Just do it~ I will share my experiences with everyone and grow together. 
+In 2025, NuxtPro will focus on personal product globalization, providing one-stop solutions for personal product internationalization, fully committed to building a one-person company.
 
-如需咨询和了解出海内容，请联系 c2500338766@icloud.com
+For consulting and learning more about globalization, please contact c2500338766@icloud.com
 
 - [Github](https://github.com/PennyJoly)
 - [Twitter/X](https://x.com/PennyJoly)
