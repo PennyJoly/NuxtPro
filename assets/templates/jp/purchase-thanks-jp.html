@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご購入ありがとうございます</title>
+    <style>
+        /* ... existing code ... */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="{{logo_url}}" alt="{{product_name}}" class="logo">
+        <h1>ご購入いただき、{{name}}様、誠にありがとうございます！</h1>
+    </div>
+
+    <p>こんにちは！{{product_name}}をお選びいただき、ありがとうございます。ご注文を受け付けました。以下はご注文の詳細です：</p>
+
+    <div class="order-details">
+        <p><strong>注文番号：</strong> {{order_id}}</p>
+        <p><strong>購入プラン：</strong> {{product_plan}}</p>
+        <p><strong>商品説明：</strong> {{product_description}}</p>
+        <p><strong>注文金額：</strong> {{amount}} {{currency}}</p>
+        <p><strong>購入日：</strong> {{purchase_date}}</p>
+    </div>
+
+    <p>以下のボタンから、購入したコンテンツにすぐにアクセスできます：</p>
+    
+    <div style="text-align: center;">
+        <a href="{{access_url}}" class="button">今すぐアクセス</a>
+    </div>
+
+    <div class="promotion">
+        <h3>🎁 特別オファー</h3>
+        <p>私たちの大切なお客様のために、特別なオファーをご用意しました：</p>
+        <ul>
+            <li>{{promotion_end_date}}までに更新すると、{{discount}}%割引が適用されます</li>
+            <li>友達を招待すると、追加の{{referral_bonus}}の報酬が得られます</li>
+        </ul>
+        <p>プロモーションコード：<strong>{{promo_code}}</strong></p>
+    </div>
+
+    <p>ご利用中に問題が発生した場合は、以下の方法でご連絡ください：</p>
+    <ul>
+        <li><a href="{{help_url}}">ヘルプセンター</a>にアクセスする</li>
+        <li>メールでお問い合わせ：<a href="mailto:{{support_email}}">{{support_email}}</a></li>
+        <li>ユーザーグループに参加する：{{community_group}}</li>
+    </ul>
+
+    <div class="footer">
+        当社の他の製品
+        <!-- <p>{{company_name}}</p>
+        <p>{{company_address}}</p> -->
+        <p>
+            <a href="{{product1_url}}">製品1</a> |
+            <a href="{{product2_url}}">製品2</a>
+            <a href="{{product3_url}}">製品3</a>
+            <a href="{{product4_url}}">製品4</a>
+        </p>
+    </div>
+</body>
+</html>

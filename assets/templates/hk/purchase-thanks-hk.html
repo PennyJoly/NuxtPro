@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>感謝您的購買</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .order-details {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .promotion {
+            background-color: #fff3cd;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="{{logo_url}}" alt="{{product_name}}" class="logo">
+        <h1>非常感謝{{name}}您對{{product_name}}的認可與支持！</h1>
+    </div>
+
+    <p>您好！非常感謝您選擇 {{product_name}}。我們已經收到您的訂單，以下是訂單詳情：</p>
+
+    <div class="order-details">
+        <p><strong>訂單編號：</strong> {{order_id}}</p>
+        <p><strong>購買項目：</strong> {{product_plan}}</p>
+        <p><strong>項目簡介：</strong> {{product_description}}</p>
+        <p><strong>訂單金額：</strong> {{amount}} {{currency}}</p>
+        <p><strong>購買日期：</strong> {{purchase_date}}</p>
+    </div>
+
+    <p>您可以通過以下按鈕快速訪問您購買的內容：</p>
+    
+    <div style="text-align: center;">
+        <a href="{{access_url}}" class="button">立即訪問</a>
+    </div>
+
+    <div class="promotion">
+        <h3>🎁 專屬優惠</h3>
+        <p>作為我們尊貴的客戶，我們為您準備了專屬優惠：</p>
+        <ul>
+            <li>在 {{promotion_end_date}} 前續費可享受 {{discount}} 折優惠</li>
+            <li>邀請好友購買可獲得額外 {{referral_bonus}} 獎勵</li>
+        </ul>
+        <p>優惠碼：<strong>{{promo_code}}</strong></p>
+    </div>
+
+    <p>如果您在使用過程中遇到任何問題，可以：</p>
+    <ul>
+        <li>訪問我們的<a href="{{help_url}}">幫助中心</a></li>
+        <li>通過郵件聯繫我們：<a href="mailto:{{support_email}}">{{support_email}}</a></li>
+        <li>加入用戶交流群：{{community_group}}</li>
+    </ul>
+
+    <div class="footer">
+        本公司其他產品
+        <!-- <p>{{company_name}}</p>
+        <p>{{company_address}}</p> -->
+        <p>
+            <a href="{{product1_url}}">產品1</a> |
+            <a href="{{product2_url}}">產品2</a>
+            <a href="{{product3_url}}">產品3</a>
+            <a href="{{product4_url}}">產品4</a>
+        </p>
+    </div>
+</body>
+</html>

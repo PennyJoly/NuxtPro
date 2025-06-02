@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /user/
+Disallow: /tmp/
+Disallow: /logs/
+Disallow: /config/
+Disallow: /scripts/
+Disallow: /search/
+Disallow: /*.pdf$
+Sitemap: https://nuxtpro.com/sitemap.xml
