@@ -105,9 +105,11 @@ Apache 2.0 License
 
 ## 关于作者
 
-Next.js full-stack specialist providing expert services in project development, performance optimization, and SEO improvement.
+Hey，这里是Kevin，一个别具一格的ENTJ-H型独立开发者，不受约束的反骨的社恐(社交型恐怖分子)。
+现在很喜欢这样一句话，也一直在贯彻始终："想多了，全是问题;做多了,全是答案"。Just do it~我也会将我的经验与大家一同分享，一同成长进步。
+2025NuxtPro将专注于个人产品出海，提供一站式个人产品出海解决方案，贯彻打造一人公司。
 
-For consulting and training opportunities, reach out at c2500338766@icloud.com
+如需咨询和了解出海内容，请联系 c2500338766@icloud.com
 
 - [Github](https://github.com/PennyJoly)
 - [Twitter/X](https://x.com/PennyJoly)
