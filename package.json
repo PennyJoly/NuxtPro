@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@nuxtjs/plausible": "^1.2.0",
+    "@nuxtjs/seo": "^3.0.3",
     "@nuxtjs/sitemap": "^7.2.10",
     "@unlok-co/nuxt-stripe": "^4.0.2",
     "@vite-pwa/nuxt": "^0.10.6",

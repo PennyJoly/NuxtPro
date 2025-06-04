@@ -27,8 +27,41 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     '@nuxtjs/plausible',
     '@nuxtjs/sitemap',
-    'nuxt-llms'
+    'nuxt-llms',
+    '@nuxtjs/seo'
   ],
+  //配置公共seo数据
+  site: {
+    url: 'https://nuxtpro.com',
+    name: 'OpenSource Nuxt SaaS Boilerplate | NuxtPro',
+    description: 'The NuxtJS boilerplate with all the stuff you need to get your product in front of customers. From idea to production in 1 hour.',
+    defaultLocale: 'en',
+    enabled: true,
+    debug: false,
+    indexable: true,
+    trailingSlash: false
+  },
+  //配置结构化数据
+  schemaOrg: {
+    identity: {
+      type: 'Organization',
+      name: 'OpenSource Nuxt SaaS Boilerplate | NuxtPro',
+      url: 'https://nuxtpro.com',
+      logo: 'https://nuxtpro.com/favicon.ico'
+    },
+    defaults: true,
+    minify: true,
+    reactive: false,
+    enabled: true,
+    debug: false
+  },
+  //配置robots爬虫抓取协议
+  robots: {
+    UserAgent: '*',
+    Disallow: '/private',
+    Allow: '/',
+    Sitemap: 'https://nuxtpro.com/sitemap.xml'
+  },
   i18n: {
     strategy: 'prefix_except_default',
     locales: ['en-US', 'zh-CN','JP'],
