@@ -629,6 +629,7 @@ const {t} = useI18n()
 const config = useRuntimeConfig();
 //import Paddle from 'paddle-sdk';
 const { stripe,loadStripe  } = useClientStripe();
+stripe.value = await loadStripe(config.public.stripe.key);
 
 const paymentMethod = ref(parseInt(config.public.paymentMethod))
 const waitlistEmail = ref('');
@@ -712,7 +713,7 @@ useHead({
   ]
 })
 
-stripe.value = await loadStripe(config.public.stripe.key);
+
 const faqs = ref([
   {
     question: '1. What is this product?',

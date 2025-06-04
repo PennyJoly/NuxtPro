@@ -56,6 +56,23 @@ npm run dev
 
 Visit http://localhost:3000 to view your nuxtpro application.
 
+## ★ Minimum Startup Configuration ★
+
+```
+NODE_ENV=development
+NUXT_PUBLIC_ENV=development 
+PORT=3000
+NUXT_PUBLIC_BASE_URL=http://localhost:3000 # your base url
+NUXT_RESEND_API_KEY=  # your resend api key. details for :https://resend.com
+DATABASE_URL= # your mysql url e.g: mysql://root:password.@localhost:3306/nuxtpro
+BETTER_AUTH_SECRET=B3E4q0JYr3pRpQkwvxo9jfOLz41TKrNM # your better auth 32 secret. details for : https://www.better-auth.com/docs/installation
+BETTER_AUTH_URL=http://localhost:3000 # your better auth url  e.g: http://localhost:3000 
+
+For minimal startup without Stripe registration, simply comment out these two lines in index.vue
+# const { stripe,loadStripe  } = useClientStripe();
+# stripe.value = await loadStripe(config.public.stripe.key);
+```
+
 ## ⚙️ Configuration
 
 1. i18n config

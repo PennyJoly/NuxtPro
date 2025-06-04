@@ -56,6 +56,23 @@ npm run dev
 
 ブラウザで `http://localhost:3000` にアクセスし、起動したNuxtProアプリケーションを確認してください。
 
+## ★ 最小起動設定 ★
+
+```
+NODE_ENV=development
+NUXT_PUBLIC_ENV=development 
+PORT=3000
+NUXT_PUBLIC_BASE_URL=http://localhost:3000 # あなたのベースURL
+NUXT_RESEND_API_KEY= # あなたのResend APIキー
+DATABASE_URL= # MySQLデータベース接続URL
+BETTER_AUTH_SECRET=B3E4q0JYr3pRpQkwvxo9jfOLz41TKrNM # あなたの32文字のBetterAuth認証キー 例: B3E4q0JYr3pRpQkwvxo9jfOLz41TKrNM
+BETTER_AUTH_URL=http://localhost:3000 # あなたのベースURL  
+
+Stripeの登録がまだ完了していない場合、最小起動のためにindex.vue内の以下の2行をコメントアウトしてください
+# const { stripe,loadStripe  } = useClientStripe();
+# stripe.value = await loadStripe(config.public.stripe.key);
+```
+
 ## ⚙️ 設定
 
 

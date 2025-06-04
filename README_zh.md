@@ -12,6 +12,8 @@
 
 👉 NuxtPro 商业版 $40 刀 限时早鸟折扣券 -> https://x.com/PennyJoly
 
+
+
 ## ✨ 产品特点
 高度集成当下最流行的开源技术栈方案，让您的出海创收历程仅需片刻
 
@@ -56,6 +58,23 @@ npm run dev
 ```
 
 浏览器里输入 http://localhost:3000 查看启动的NuxtPro应用.
+
+## ★ 最小启动项配置 ★
+
+```
+NODE_ENV=development
+NUXT_PUBLIC_ENV=development 
+PORT=3000
+NUXT_PUBLIC_BASE_URL=http://localhost:3000 # 你的基础服务地址
+NUXT_RESEND_API_KEY= # 你的resend密钥
+DATABASE_URL= # mysql数据库连接地址
+BETTER_AUTH_SECRET=B3E4q0JYr3pRpQkwvxo9jfOLz41TKrNM # 你的32位betterAuth授权密钥 例如：B3E4q0JYr3pRpQkwvxo9jfOLz41TKrNM
+BETTER_AUTH_URL=http://localhost:3000 # 你的基础服务地址  
+
+同时在尚未注册好stripe的前提下，最小启动请注释掉index.vue里的这两行即可
+# const { stripe,loadStripe  } = useClientStripe();
+# stripe.value = await loadStripe(config.public.stripe.key);
+```
 
 ## ⚙️ 配置
 
