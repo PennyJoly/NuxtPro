@@ -1,6 +1,6 @@
 
 
-🌍 *[English](README.md) ∙ [简体中文](README_zh.md) *
+🌍 *[English](README.md) ∙ [简体中文](README_zh.md) ∙ [日本語](README_ja.md) *
 
 # NuxtPro:开源的Nuxt SaaS一站式出海模板 | 多语言、支付和友好SEO（Nuxt3）
 

@@ -1,6 +1,6 @@
 
 
-🌍 *[English](README.md) ∙ [简体中文](README_zh.md) *
+🌍 *[English](README.md) ∙ [简体中文](README_zh.md) ∙ [日本語](README_ja.md) *
 
 # NuxtPro: Open Source Nuxt SaaS All-in-One Template for Global Expansion | Multilingual, Payment, and SEO Friendly (Nuxt3)
 
