@@ -76,6 +76,15 @@ BETTER_AUTH_URL=http://localhost:3000 # 你的基础服务地址
 # stripe.value = await loadStripe(config.public.stripe.key);
 ```
 
+## 🌈启动好的效果图
+![1749050152589](https://github.com/user-attachments/assets/76403671-3700-47f8-a6a7-123a42fdf92f)
+![image](https://github.com/user-attachments/assets/2ea38a96-6231-4419-b9db-9312492c5a2c)
+![image](https://github.com/user-attachments/assets/788682ca-db63-486a-b82d-4bc8814386db)
+![image](https://github.com/user-attachments/assets/aee19765-0b75-46de-9585-1f6d408a7ae5)
+![image](https://github.com/user-attachments/assets/60d9f4ed-d36b-465e-80ba-fe286552ed6c)
+![image](https://github.com/user-attachments/assets/b026fa3e-b789-4cf6-8271-037bc4faf0a1)
+
+
 ## ⚙️ 配置
 
 
