@@ -128,7 +128,8 @@ NUXT_CREEM_API_KEY= # 你的creem申请的API密钥. 详情见:https://www.creem
 NUXT_PUBLIC_CREEM_URL= # 你的creem基础url 示例: https://test-api.creem.io
 NUXT_CREEM_WEBHOOK_SECRET= # 你的creem的webhook密钥
 ```
-![1751384859981](https://github.com/user-attachments/assets/74b25989-26c2-444c-8433-2661f1863235)
+![image](https://github.com/user-attachments/assets/7f5c1709-34bc-40b7-8056-c9702b88853b)
+
 ![image](https://github.com/user-attachments/assets/79aca184-2546-4891-8830-161856c931b3)
 
 
