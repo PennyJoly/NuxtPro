@@ -42,7 +42,7 @@ git clone https://github.com/PennyJoly/NuxtPro
 ```bash
 npm install
 # or
-yarn
+yarn install
 # or
 pnpm install
 ```
