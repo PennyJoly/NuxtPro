@@ -344,6 +344,10 @@
             <button v-if="paymentMethod == 3" @click="openPayment(isAnnual ? 'prod_69GtlTkHl8An5htSR9DAFf' : 'prod_208nDCId85sCF8ElBSqcb0','')" class="w-full bg-black text-white py-3 rounded-full relative overflow-hidden group">
               <span class="relative group-hover:scale-110 transition-transform duration-300">{{ $t('home.pricing.starterButton') }}</span>
             </button>
+             <!-- bagelpay 此处是bagelpay的商品id ，测试时换成自己的商品id -->
+            <button v-if="paymentMethod == 5" @click="openPayment(isAnnual ?'prod_1972471388709662722': 'prod_1972471388709662722','onetime')" class="w-full bg-purple-600 text-white py-3 md:py-4 rounded-full relative overflow-hidden group max-w-xs mx-auto mt-auto">
+              <span class="relative group-hover:scale-110 transition-transform duration-300 text-sm md:text-base">{{ $t('home.pricing.buyNow') }}</span>
+            </button>
           </div> 
 <!-- 
            Professional Plan  -->
@@ -376,6 +380,10 @@
              <!-- creem  此处是creem的价格 id ，测试时换成自己的creem价格 id-->
             <button v-if="paymentMethod == 3" @click="openPayment(isAnnual ? 'prod_7BOSCT3lmQgFWvcXxpwVzh' : 'prod_1NHRsJYGE5WvGuagE8cBZj','subscription')" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 rounded-full relative overflow-hidden group">
               <span class="relative group-hover:scale-110 transition-transform duration-300">{{ $t('home.pricing.professionalButton') }}</span>
+            </button>
+             <!-- bagelpay 此处是bagelpay的商品id ，测试时换成自己的商品id -->
+            <button v-if="paymentMethod == 5" @click="openPayment(isAnnual ?'prod_1972471388709662722': 'prod_1972471388709662722','subscription')" class="w-full bg-purple-600 text-white py-3 md:py-4 rounded-full relative overflow-hidden group max-w-xs mx-auto mt-auto">
+              <span class="relative group-hover:scale-110 transition-transform duration-300 text-sm md:text-base">{{ $t('home.pricing.buyNow') }}</span>
             </button>
           </div>
 
@@ -853,16 +861,10 @@ const openPayment = async (priceId,payType) => {
     await payWithPaddle(priceId,payType);
   } else if (parType === 3) { // 使用 creem
     await payWithCreem(priceId,payType);
+  }else if (parType === 5) { // 使用 bagelPay
+    await payWithBagelPay(priceId,payType);
   }
 };
-
-
-// const payWithPaddle = () => {
-//   Paddle.Checkout.open({
-//     product: 12345,
-//     email: '',
-//   });
-// };
 
 const showBottomPopup = ref(false);
 let scrollTimeout;
@@ -967,6 +969,35 @@ const payWithCreem = async (priceId, payType) => {
     alert('An error occurred while processing your request. Please try again.')
   }
 }
+
+//采用bagePay收款
+const payWithBagelPay = async (priceId, payType) => {
+  try {
+    const requestBody = {
+      productId: priceId,
+    };
+   
+    const response = await $fetch("/api/bagelPay/create-checkout-session", {
+      method: "POST",
+      headers: { 'Content-Type': 'application/json' },
+      body: requestBody
+    });
+    if (response.code !== 200){
+      throw new Error(response.message || 'Error creating checkout session')
+    }
+
+    const { url } = response.data;
+
+    if (url) {
+      window.location.href = url
+    } else {
+      throw new Error('No URL returned from checkout session creation')
+    }
+  } catch (error) {
+    console.error('Error:', error)
+    alert('An error occurred while processing your request. Please try again.')
+  }
+};
 
 const isAnnual = ref(false);
 

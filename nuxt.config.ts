@@ -143,6 +143,11 @@ export default defineNuxtConfig({
       apiKey: process.env.NUXT_CREEM_API_KEY,
       webhookSecret: process.env.NUXT_CREEM_WEBHOOK_SECRET
     },
+    //bagelPay
+    bagelPay:{
+      apiKey: process.env.NUXT_BAGELPAY_API_KEY,
+      webhookSecret: process.env.NUXT_BAGELPAY_WEBHOOK_SECRET
+    },
     // ipinfo 获取Ip信息
     ipinfoToken: process.env.IPINFO_TOKEN,
     //public中定义的属性既可以在服务端，也可以在客户端获取到
@@ -167,6 +172,9 @@ export default defineNuxtConfig({
       },
       creem:{
         url: process.env.NUXT_PUBLIC_CREEM_URL
+      },
+      bagelPay:{
+        url: process.env.NUXT_PUBLIC_BAGELPAY_URL
       },
     },
   },
