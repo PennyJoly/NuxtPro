@@ -22,6 +22,7 @@ Highly integrated with the most popular open-source technology stack solutions, 
 - 🎨 Tailwindcss -> An open-source CSS framework for rapid UI development.
 - 🔍 DrizzleOrm -> An open-source next-generation database toolkit for Node.js and TypeScript.
 - 💰 Stripe -> The best and most secure online payment service.
+- 💳 BagelPay -> A stable online payment service for SaaS and independent developers.
 - 💳 Creem -> A stable online payment service for SaaS and independent developers.
 - ✉️ Resend -> A modern email API service built for developers.
 - 👄 i18n -> Open-source and easy internationalization support for Nuxt projects, no matter how small the language.
@@ -122,6 +123,15 @@ Configure the following in your `.env` file:
 NUXT_CREEM_API_KEY= # your creem api key. details for :https://www.creem.io
 NUXT_PUBLIC_CREEM_URL= # your creem base url e.g: https://test-api.creem.io
 NUXT_CREEM_WEBHOOK_SECRET= # your creem webhook secret
+```
+
+## 💳 Stable Online Payment Service Support for Independent Developers
+
+configure the following in your `.env` file:
+```
+NUXT_PUBLIC_BAGELPAY_URL= # your creem base url https://test.bagelpay.io
+NUXT_BAGELPAY_API_KEY= # your bagelpay secret key.
+NUXT_BAGELPAY_WEBHOOK_SECRET= # your bagelpay webhook secret key
 ```
 
 ## ✉️ Email API Service Support

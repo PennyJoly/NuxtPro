@@ -22,6 +22,7 @@
 - 🎨 Tailwindcss -> 迅速なUI開発のためのオープンソースCSSフレームワーク。
 - 🔍 DrizzleOrm -> Node.jsおよびTypeScript用のオープンソース次世代データベースツールキット。
 - 💰 Stripe -> 最高かつ最も安全なオンライン決済サービス。
+- 💳 BagelPay -> SaaSおよび独立開発者向けに安定したオンライン決済サービスを提供。
 - 💳 Creem -> SaaSおよび独立開発者向けに安定したオンライン決済サービスを提供。
 - ✉️ Resend -> 開発者向けに作られたモダンなメールAPIサービス。
 - 👄 i18n -> Nuxtプロジェクトに国際化サポートを簡単に追加できるオープンソース。どんな小さな言語でも対応可能。
@@ -124,6 +125,15 @@ NUXT_STRIPE_WEBHOOK_SECRET= # あなたのStripe Webhookシークレットキー
 NUXT_CREEM_API_KEY= # あなたのCreem申請APIキー。詳細は: https://www.creem.io を参照してください
 NUXT_PUBLIC_CREEM_URL= # あなたのCreemベースURL。例: https://test-api.creem.io
 NUXT_CREEM_WEBHOOK_SECRET= # あなたのCreem Webhookシークレットキー
+```
+
+## 💳 独立開発者向けの安定したオンライン決済サービスサポート
+
+`.env` ファイルで以下を完了してください:
+```
+NUXT_PUBLIC_BAGELPAY_URL= # あなたのbagelPayベースURL。例: https://test.bagelpay.io
+NUXT_BAGELPAY_API_KEY= # あなたのbagelPay申請APIキー。
+NUXT_BAGELPAY_WEBHOOK_SECRET= # あなたのbagelPay Webhookシークレットキー
 ```
 
 ## ✉️ メールAPIサービスサポート

@@ -24,6 +24,7 @@
 - 🎨 Tailwindcss -> 用于快速 UI 开发的开源 CSS 框架.
 - 🔍 DrizzleOrm -> 用于 Node.js 和 TypeScript 的开源下一代数据库工具包.
 - 💰 Stripe -> 最好、最安全的在线支付服务.
+- 💳 BagelPay -> 为 SaaS 和独立开发者提供稳定简单配置的的在线收款服务.
 - 💳 Creem -> 为 SaaS 和独立开发者提供稳定的的在线支付服务.
 - ✉️ Resend -> 为开发者们打造的现代邮件API服务.
 - 👄 i18n -> 开源且轻松地为Nuxt项目添加国际化支持,再小的语种都不怕.
@@ -128,6 +129,16 @@ NUXT_CREEM_API_KEY= # 你的creem申请的API密钥. 详情见:https://www.creem
 NUXT_PUBLIC_CREEM_URL= # 你的creem基础url 示例: https://test-api.creem.io
 NUXT_CREEM_WEBHOOK_SECRET= # 你的creem的webhook密钥
 ```
+
+## 💳 稳定简单配置的的在线收款服务
+
+进入 `.env` 文件完成以下内容：
+```
+NUXT_PUBLIC_BAGELPAY_URL= # 你的bagelPay基础url https://test.bagelpay.io
+NUXT_BAGELPAY_API_KEY= # 你的bagelPay申请的API密钥.
+NUXT_BAGELPAY_WEBHOOK_SECRET= # 你的bagelPay的webhook密钥
+```
+
 ![image](https://github.com/user-attachments/assets/7f5c1709-34bc-40b7-8056-c9702b88853b)
 
 ![image](https://github.com/user-attachments/assets/79aca184-2546-4891-8830-161856c931b3)

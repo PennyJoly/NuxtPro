@@ -21,6 +21,7 @@ NuxtPro — это открытый корпоративный шаблон SaaS
 - 🎨 Tailwindcss -> Открытый CSS-фреймворк для быстрой разработки UI.
 - 🔍 DrizzleOrm -> Open-source ORM нового поколения для Node.js и TypeScript.
 - 💰 Stripe -> Лучший и самый безопасный онлайн-платежный сервис.
+- 💳 BagelPay -> Стабильные онлайн-платежи для SaaS и инди-разработчиков.
 - 💳 Creem -> Стабильные онлайн-платежи для SaaS и инди-разработчиков.
 - ✉️ Resend -> Современный email API для разработчиков.
 - 👄 i18n -> Легкая интеграция мультиязычности в Nuxt-проекты.
@@ -124,6 +125,15 @@ NUXT_STRIPE_WEBHOOK_SECRET= # Ваш webhook-ключ stripe
 NUXT_CREEM_API_KEY= # Ваш API-ключ creem. Подробнее: https://www.creem.io
 NUXT_PUBLIC_CREEM_URL= # Ваш базовый URL creem, например: https://test-api.creem.io
 NUXT_CREEM_WEBHOOK_SECRET= # Ваш webhook-ключ creem
+```
+
+## 💳 Stable Online Payment Service Support for Independent Developers
+
+В файле `.env` укажите:
+```
+NUXT_PUBLIC_BAGELPAY_URL= # Ваш API-ключ bagelPay. Подробнее: https://test.bagelpay.io 
+NUXT_BAGELPAY_API_KEY= # Ваш API-ключ bagelPay. Подробнее:
+NUXT_BAGELPAY_WEBHOOK_SECRET= # Ваш webhook-ключ creem
 ```
 
 ## ✉️ Поддержка email API
