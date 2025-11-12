@@ -1,6 +1,6 @@
 
 
-🌍 *[English](README.md) ∙ [简体中文](README_zh.md) ∙ [日本語](README_ja.md) *
+🌍 *[English](README.md) ∙ [简体中文](README_zh.md) ∙ [日本語](README_ja.md) ∙ [Русский язык](README_ru.md)*
 
 # NuxtPro: オープンソースのNuxt SaaSワンストップ海外展開テンプレート | 多言語、決済、SEOフレンドリー（Nuxt3）
 
