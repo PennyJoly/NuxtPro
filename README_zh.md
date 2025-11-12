@@ -224,6 +224,7 @@ Hey，这里是Kevin，一个别具一格的ENTJ-H型独立开发者，不受约
 - [FreeTempMail - 开源免费临时邮箱](https://mail.aitre.cc)
 - [NuxtDir - 发现全球热门ai工具导航站](https://nuxtdir.com)
 - [CheapGpt - 企业级AI大模型中转，1元人民币=1美刀额度](https://ai.linktre.cc)
+- [linktre-tools - 独立开发出海工具大全](https://github.com/PennyJoly/linktre-tools)
 
 
 <a href="https://buymeacoffee.com/c2500338765" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
