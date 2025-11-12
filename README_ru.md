@@ -207,6 +207,14 @@ Apache 2.0 License
 - [Github](https://github.com/PennyJoly)
 - [Twitter/X](https://x.com/PennyJoly)
 
+## kevin‘s other product
+
+- [Remover.plus - Free sora2 watermark remover](https://remover.plus)
+- [FreeTempMail - opensource free temp mail](https://mail.aitre.cc)
+- [NuxtDir - discover powerful ai website worldwide](https://nuxtdir.com)
+- [CheapGpt - ai llm gateway,¥1 = $1](https://ai.linktre.cc)
+- [linktre-tools - indie maker tools](https://github.com/PennyJoly/linktre-tools)
+
 <a href="https://buymeacoffee.com/c2500338765" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/indiemakerkevin)
